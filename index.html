@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omah — Web Designer & Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F8FAFC] text-[#1E293B] font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-[#0F172A]">OMAH<span class="text-cyan-500">.</span></a>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+                <a href="#work" class="hover:text-cyan-600 transition-colors">Work</a>
+                <a href="#about" class="hover:text-cyan-600 transition-colors">About</a>
+                <a href="#contact" class="hover:text-cyan-600 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:block px-6 py-2.5 bg-[#0F172A] text-white rounded-full text-sm font-semibold hover:bg-cyan-600 transition-all">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="hero-content">
+                <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] mb-6 text-[#0F172A]">
+                    Omah — Web Designer & Developer
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
+                    I build modern, premium websites for businesses in Benin and beyond. Combining aesthetics with functional excellence.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#work" class="px-8 py-4 bg-[#0F172A] text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                        See My Work
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-slate-200 rounded-xl font-bold text-lg hover:bg-white hover:border-cyan-500 transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="absolute -inset-4 bg-cyan-100/50 rounded-full blur-3xl"></div>
+                <img src="images/picture-1.jpg" 
+                     alt="Omah Portrait" 
+                     class="relative z-10 w-full aspect-square object-cover rounded-[2rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <span class="text-cyan-600 font-bold tracking-widest uppercase text-sm">Selected Work</span>
+                <h2 class="text-4xl font-bold mt-2">Crafting Digital Experiences</h2>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card group relative grid md:grid-cols-12 gap-8 items-center rounded-3xl overflow-hidden bg-slate-50 p-8 md:p-12 border border-slate-100">
+                <div class="md:col-span-7 space-y-6">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white rounded-full text-xs font-bold text-slate-500 shadow-sm">UI/UX Design</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-xs font-bold text-slate-500 shadow-sm">Development</span>
+                    </div>
+                    <h3 class="text-3xl font-bold">Aura Plumbing Company Website</h3>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        Built a fully responsive website for Aura Plumbing Company. A premium digital presence that drives leads through strategic design and seamless user experience.
+                    </p>
+                    <ul class="grid grid-cols-2 gap-4 text-sm text-slate-500 pb-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-500"></i> 24/7 service info</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-500"></i> WhatsApp Integration</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-500"></i> Google Maps Embed</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-500"></i> Services Grid</li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center gap-2 font-bold text-[#0F172A] group-hover:text-cyan-600 transition-colors">
+                        View Live Project <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="images/picture-2.jpg" alt="Desktop Mockup" class="w-full">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-1/2 rounded-xl overflow-hidden shadow-2xl border-4 border-white hidden lg:block">
+                        <img src="images/picture-3.jpg" alt="Mobile Mockup" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-[#F8FAFC]">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block p-4 bg-white rounded-full shadow-lg mb-8">
+                <img src="images/picture-1.jpg" alt="Profile" class="w-20 h-20 rounded-full object-cover grayscale">
+            </div>
+            <h2 class="text-4xl font-bold mb-8">Passionate about design and technology.</h2>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                As a web designer and developer based in Benin, I bridge the gap between complex engineering and intuitive design. With a focus on performance and minimalist aesthetics, I help brands communicate their value clearly and effectively. I specialize in building responsive, high-converting websites using modern technologies that ensure your business stands out in a crowded digital landscape.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-5xl font-bold mb-8 text-[#0F172A]">Let’s build something together.</h2>
+                    <p class="text-lg text-slate-600 mb-10">
+                        Ready to start your next project? Reach out through any of these channels or fill out the form.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-600 group-hover:bg-cyan-600 group-hover:text-white transition-all">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Me</p>
+                                <a href="mailto:chukwuebukaomah654@gmail.com" class="text-lg font-semibold text-[#0F172A]">chukwuebukaomah654@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">WhatsApp</p>
+                                <a href="https://wa.me/2348058617225" class="text-lg font-semibold text-[#0F172A]">+234 805 861 7225</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <form class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-slate-500">Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-5 py-4 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-cyan-500 outline-none transition-all">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-slate-500">Email</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-5 py-4 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-cyan-500 outline-none transition-all">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-500">Message</label>
+                            <textarea rows="4" placeholder="Tell me about your project..." class="w-full px-5 py-4 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-cyan-500 outline-none transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-5 bg-[#0F172A] text-white rounded-xl font-bold text-lg hover:bg-cyan-600 transition-all shadow-lg hover:shadow-cyan-100">
+                            Get In Touch
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-100 bg-white px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-2xl font-bold tracking-tighter text-[#0F172A]">OMAH<span class="text-cyan-500">.</span></p>
+            <p class="text-slate-400 text-sm">© 2026 Omah. All rights reserved.</p>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-500 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-cyan-500 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-cyan-500 transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

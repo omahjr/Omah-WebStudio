@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #06b6d4;
+    color: white;
+}
+
+/* Custom Animations */
+.hero-content {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.project-card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Section titles underline effect */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #06b6d4;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+#about h2::after {
+    margin: 1rem auto 0;
+}
+
+/* Interactive elements */
+input:focus, textarea:focus {
+    box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.1);
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
